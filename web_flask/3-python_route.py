@@ -10,7 +10,7 @@ app = Flask("__name__")
 
 
 @app.route('/', strict_slashes=False)
-def hello_hbnb():
+def hello():
     """Return a given string"""
     return ("Hello HBNB!")
 
@@ -22,14 +22,14 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def display_c(text):
+def cDisplay(text):
     """display C followed by the value of the text variable"""
     return "C {}".format(text.replace("_", " "))
 
 
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def display_python(text="is cool"):
+def pythonDisplay(text="is cool"):
     """display Python followed by the value of the text variable"""
     return "Python {}".format(text.replace("_", " "))
 
