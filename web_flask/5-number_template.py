@@ -18,26 +18,26 @@ def hbnb():
 
 
 @app.route("/c/<text>", strict_slashes=False)
-def show_c(text):
+def cText(text):
     """ This function returns a string"""
     return 'C {}'.format(text.replace("_", " "))
 
 
 @app.route("/python/", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
-def show_python(text="is_cool"):
+def pythonText(text="is_cool"):
     """ This function returns a string"""
     return 'Python {}'.format(text.replace("_", " "))
 
 
 @app.route("/number/<int:n>", strict_slashes=False)
-def show_number(n):
+def isNumber(n):
     """ This function returns a string"""
     return "{} is a number".format(n)
 
 
 @app.route("/number_template/<int:n>", strict_slashes=False)
-def show_number_html(n):
+def numberHtml(n):
     """ This function returns a html page"""
     return render_template('5-number.html', n=n)
 
