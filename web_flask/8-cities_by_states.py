@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""
-starts a Flask web application
-"""
-
-from flask import Flask, render_template
-from models import *
+# -*- coding: utf-8 -*-
+""" Starts a Flash Web Application """
 from models import storage
+from models.state import State
+from flask import Flask, render_template
 app = Flask(__name__)
 
 
