@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
 """ Starts a Flash Web Application """
 from models import storage
 from models.state import State
