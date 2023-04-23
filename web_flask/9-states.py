@@ -22,7 +22,7 @@ def state():
 
 
 @app.route('/states/<id>', strict_slashes=False)
-def state_by_id(id):
+def stateById(id):
     """Displays a html page with citys of that state"""
     for state in storage.all(State).values():
         if state.id == id:
